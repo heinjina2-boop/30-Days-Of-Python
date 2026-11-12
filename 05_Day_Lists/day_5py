@@ -1,1 +1,91 @@
+empty_list =[]
+liste = ['livre','cahier','stylo','crayon','dico']
+print(len(liste))
+po1,*po2,po3=liste
+print(po1)
+print(po2)
+print(po3)
 
+mixed_data_types = ['Koto',20 ,171,'mada']
+it_companies = ['facebook','google','microsoft','apple','IBM','oracle','Amazon']
+print(it_companies)
+print(len(it_companies))
+premier,*milieu,dernier=it_companies
+print(premier)
+print(milieu)
+print(dernier)
+it_companies[4]='meta'
+print(it_companies)
+it_companies.append('anthropic')
+print(it_companies)
+it_companies.insert(3,'openAI')
+print(it_companies)
+it_companies[1]=it_companies[1].upper()
+print(it_companies)
+it_companies_str='# '.join(it_companies)
+print(it_companies_str)
+vrif='meta'in it_companies 
+print(vrif)
+it_companies.reverse()
+print(it_companies)
+decoupe=it_companies[0:3]
+print(decoupe)
+decoupe2=it_companies[6:9]
+print(decoupe2)
+decoupe3=it_companies[1:8]
+print(decoupe3)
+del it_companies[0]
+print(it_companies)
+it_companies.pop(3)
+print(it_companies)
+del it_companies[len(it_companies)-1]
+print(it_companies)
+it_companies.clear()
+print(it_companies)
+del it_companies
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+front_end.extend(front_end)
+print(front_end)
+full_stack= front_end.copy()
+print(full_stack)
+full_stack.append('SQL')
+full_stack.append('python')
+print(full_stack)
+
+#niv2 
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort(reverse= True)
+print(ages)
+print(max(ages))
+print(min(ages))
+print(sum(ages))
+print(len(ages))
+moyenne= sum(ages)/len(ages)
+print( "la moyenne est de :",moyenne)
+moyenne2= sum(ages)//len(ages)
+print("la moyenne (non decimale):",moyenne2)
+etendue = max(ages)-min(ages)
+print( "l etendue est de :",etendue)
+mimo = moyenne-min(ages)
+mamo = moyenne-max(ages)
+print(mimo)
+print(mamo)
+resultat= abs(mimo)
+resultat1 = abs(mamo)
+print("le premier resultat :",resultat)
+print("le second resultat:",resultat1)
+
+pays = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+milieu=pays[3:4]
+print(milieu)
+gauche = pays[0:3]
+droite= pays[3:len(pays)]
+print(gauche)
+print(droite)
+asia,europe,america  ,*scandinave =pays
+print("celle de l asie :",asia)
+print("celle de europe:",europe)
+print("celle de amerique:",america)
+print("scandinave:",scandinave)
