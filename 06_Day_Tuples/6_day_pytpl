@@ -1,0 +1,44 @@
+vide = tuple()
+sib = ('lancelot','merlin','perceval')
+sid_w = ('galahad','merline')
+siblings = sib +sid_w
+print(sib)
+print(sid_w)
+print(siblings)
+print('nombre de frere :', len(sib))
+print('nombre de soeur :',len(sid_w))
+family = list(siblings)
+print(family)
+family.append('arthur')
+family.append('lisbone')
+print(family)
+new = tuple(family)
+print(new)
+gen2 = new[0:5]
+print(gen2)
+gen1 = new[-2:len(new)]
+print(gen1)
+
+fruits = ('kiwi','abricot','pasteque','citron')
+legumes = ('haricot vert','poireau','pomme de terre')
+laitier = ('fromage','yaourt','beurre','lait')
+food_stuff_tp = laitier+fruits+legumes
+print(fruits)
+print(legumes)
+print(laitier)
+print(food_stuff_tp)
+food_stuff_lt = list(food_stuff_tp)
+print(food_stuff_lt)
+premier , *milieu ,dernier = food_stuff_lt
+print("le premier :",premier)
+print("les milieu :",milieu)
+print("le dernier:",dernier)
+trois_prems = food_stuff_lt[0:3]
+print("les trois premier :" ,trois_prems)
+trois_der = food_stuff_lt[8:11]
+print("les trois dernier:",trois_der)
+del food_stuff_tp
+
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print('estonia'in nordic_countries)
+print('Iceland' in nordic_countries)
