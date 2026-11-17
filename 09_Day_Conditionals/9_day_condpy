@@ -1,0 +1,54 @@
+age = int(input('votre age:'))
+if age >=18:
+    print('vous etes assez agé pour conduire')
+else : print('il vous reste :',18-age ,'ans avant de conduire')    
+
+votre_age= int(input('donnez votre age:'))
+mon_age = 20
+y =votre_age - mon_age
+if votre_age> mon_age :
+    if  y >1:
+        print(' plus ageé de loin avec ',y,'ans de diff')
+    else :print('pas tres differents que ça',y,'an de diff')    
+else : print('je suis plus ageé')    
+
+a = int(input('donnez la valeur de a :'))
+print(a)
+b = int(input('donnez aussi la valeur de b :'))
+print(b)
+if a > b : 
+    print('a est plus grand que b')
+elif a< b : 
+    print('b est plus grand que a')   
+else : print(' a est egale b')    
+
+score = int(input('donnez lz resultat de votre score'))
+if score > 90 and score < 100:
+    print('groupe A')
+elif score > 89 and score<80: 
+    print('groupe B')    
+elif score >79 and score< 70:
+    print('groupe C')    
+elif score  >69 and score<60:
+    print('groupe D')    
+elif score > 59 and score< 50:
+    print('groupe E')
+else : print('groupe I')    
+
+mois = input('donnez votre mois :')
+if mois in ['septembre','octobre', 'novembre']:
+   print('saison d \' automne ')
+elif mois in ['decembre','janvier','fevrier']:
+    print('saison d\' hiver')   
+elif mois in ['mars','avril','mai']:
+    print('saison de printemps ')
+else : print('été')
+
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits_donne = input('c \' quoi votre fruits :')
+if fruits_donne in fruits :
+    print('ce fruits existe deja ')
+else :
+    fruits.append(fruits_donne)
+    print('on a ajouter votre fruits ',fruits)
