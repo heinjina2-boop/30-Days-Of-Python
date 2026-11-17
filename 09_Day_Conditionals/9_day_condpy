@@ -52,3 +52,21 @@ if fruits_donne in fruits :
 else :
     fruits.append(fruits_donne)
     print('on a ajouter votre fruits ',fruits)
+
+person={'first_name': 'Asabeneh',
+'last_name': 'Yetayeh',
+'age': 250,
+'country': 'Finland',
+'is_married': True,
+'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+'address': {
+    'street': 'Space street',
+       'zipcode': '02210'
+ }
+}
+if 'skills' in person:
+   milieu =person['skills']
+   print(milieu[2])
+print( 'skills ' in person )   
+if 'Python'in person['skills']:
+    print('python est dans le skills')
