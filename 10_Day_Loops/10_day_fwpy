@@ -1,0 +1,19 @@
+for x in range(0,10):
+    print('les voici ',x)
+
+
+y = 0
+while y< 11 :
+    print(y) 
+    y = y +1 
+    for x in range(10,-1,-1):
+    print(x)
+for x in range(10,-1,-1):
+    print(x)
+    
+count = 10 
+while count<11:
+    print(count)
+    if count == 0:
+        break
+    count=count-1     
